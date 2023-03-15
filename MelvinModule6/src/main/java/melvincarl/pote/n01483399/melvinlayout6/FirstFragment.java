@@ -65,12 +65,11 @@ public class FirstFragment extends Fragment {
                 else if(counter == 4){
                     counter++;
                     Toast.makeText(getContext(), getString(R.string.toast_text) + String.valueOf(counter),Toast.LENGTH_LONG).show();
-
+                    simpleProgressBar.setVisibility(View.INVISIBLE);
                 }
                 else if(counter == 5){
                     counter++;
                     Toast.makeText(getContext(), getString(R.string.toast_text) + String.valueOf(counter),Toast.LENGTH_LONG).show();
-                    simpleProgressBar.setVisibility(View.INVISIBLE);
                 }
                 else if (counter == 6){
                     counter++;
@@ -91,6 +90,7 @@ public class FirstFragment extends Fragment {
 
     }
 
+    //progress bar; obtained via the link provided
     private void setProgressValue(int progress) {
         // set the progress
         simpleProgressBar.setProgress(progress);
