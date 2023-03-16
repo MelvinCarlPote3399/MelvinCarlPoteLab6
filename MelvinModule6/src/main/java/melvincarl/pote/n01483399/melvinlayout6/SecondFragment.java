@@ -49,6 +49,7 @@ public class SecondFragment extends Fragment {
                     builder.setCancelable(false);
                     builder.setTitle(R.string.alert_title);
                     builder.setMessage(R.string.alert_button1);
+                    builder.setIcon(R.drawable.nikeblue);
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
@@ -68,6 +69,7 @@ public class SecondFragment extends Fragment {
                 builder.setCancelable(false);
                 builder.setTitle(R.string.alert_title);
                 builder.setMessage(R.string.alert_button2);
+                builder.setIcon(R.drawable.nikeblue);
                 builder.setPositiveButton(R.string.alert_ok_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -86,6 +88,7 @@ public class SecondFragment extends Fragment {
                 builder.setCancelable(false);
                 builder.setTitle(R.string.alert_title);
                 builder.setMessage(R.string.alert_button3);
+                builder.setIcon(R.drawable.nikeblue);
                 builder.setPositiveButton(R.string.alert_ok_button, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
