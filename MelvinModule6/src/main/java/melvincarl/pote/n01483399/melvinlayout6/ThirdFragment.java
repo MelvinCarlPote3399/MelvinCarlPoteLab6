@@ -50,6 +50,7 @@ public class ThirdFragment<provinces_and_territories> extends Fragment {
 
                 bundle.putString("selectitem",selected);
                 bundle.putString("selectPro",province);
+                bundle.putInt("selectIndex",position+1);
                 getParentFragmentManager().setFragmentResult("requestResult",bundle);
                 /*
                 FourthFragment fragObject = new FourthFragment();

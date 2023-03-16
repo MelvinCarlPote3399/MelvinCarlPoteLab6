@@ -29,11 +29,14 @@ public class FourthFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fourth, container, false);
         TextView provincesView = view.findViewById(R.id.fourthFragment);
+        TextView orderItem = view.findViewById(R.id.secondTextView);
 
         getParentFragmentManager().setFragmentResultListener("requestResult", this, new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
                 provincesView.setText(result.getString("selectPro"));
+                int index = result.getInt("selectIndex");
+                orderItem.setText(String.valueOf(index));
             }
         });
 
