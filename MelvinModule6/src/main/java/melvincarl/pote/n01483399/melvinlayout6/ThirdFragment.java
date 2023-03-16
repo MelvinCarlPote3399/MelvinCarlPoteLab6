@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 
 import java.io.*;
 
-public class ThirdFragment extends Fragment {
+public class ThirdFragment<provinces_and_territories> extends Fragment {
 
     public ThirdFragment(){
         // require a empty public constructor
@@ -24,7 +24,8 @@ public class ThirdFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_third, container, false);
 
-        return inflater.inflate(R.layout.fragment_third, container, false);
+        return view;
     }
 }
