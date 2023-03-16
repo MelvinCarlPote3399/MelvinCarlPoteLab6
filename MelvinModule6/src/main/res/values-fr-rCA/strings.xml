@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MelvinLayout6</string>
-    <string name="home">Home</string>
+    <string name="home">Maison</string>
     <string name="melvin">Melvin</string>
-    <string name="person">Person</string>
-    <string name="settings">Settings</string>
+    <string name="person">Personne</string>
+    <string name="settings">Paramètres</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="click_the_button_for_a_surprise">Click the button for a surprise:</string>
+    <string name="click_the_button_for_a_surprise">Ç\'\est la vie</string>
     <string name="toast_text">Melvin</string>
     <string name="full_name">Melvin Carl Pote</string>
     <string name="alert_title">Melvin Carl Pote</string>
@@ -15,10 +15,10 @@
     <string name="Button3">Button 3</string>
     <string name="alert_button1">Button 1</string>
     <string name="alert_button2">Button 2</string>
-    <string name="alert_ok">OK</string>
+    <string name="alert_ok">D\'\ACCORD</string>
     <string name="alert_button3">Button 3</string>
-    <string name="alert_ok_button">OK</string>
+    <string name="alert_ok_button">D\'\ACCORD</string>
     <string name="settings_text">PROVINCE</string>
-    <string name="order">ORDER</string>
+    <string name="order">COMMANDE</string>
 
 </resources>
