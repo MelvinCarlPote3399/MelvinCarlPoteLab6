@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".PoteActivity6">
 
+    <!--
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="melvincarl.pote.n01483399.melvinlayout6.FourthFragment"
+        android:layout_width="188dp"
+        android:layout_height="679dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_fourth" />
+     -->
 
     <TextView
         android:id="@+id/thirdFragment"
@@ -22,8 +34,8 @@
 
     <ListView
         android:id="@+id/listView1"
-        android:layout_width="422dp"
-        android:layout_height="733dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#8BC34A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

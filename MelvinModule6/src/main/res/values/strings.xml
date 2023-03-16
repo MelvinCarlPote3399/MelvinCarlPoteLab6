@@ -18,6 +18,8 @@
     <string name="alert_ok">OK</string>
     <string name="alert_button3">Button 3</string>
     <string name="alert_ok_button">OK</string>
+    <string name="settings_text">PROVINCE</string>
+    <string name="order">ORDER</string>
 
     <!--String array for third & fourth fragment-->
     <string-array name="provinces_and_territories">
