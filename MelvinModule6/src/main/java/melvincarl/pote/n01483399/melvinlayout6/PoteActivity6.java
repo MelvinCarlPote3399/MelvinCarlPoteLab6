@@ -12,6 +12,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class PoteActivity6 extends AppCompatActivity {
+
+    //declaring our bottom navigation and fragment items
     BottomNavigationView bottomNavigationView;
     FirstFragment homeFragment = new FirstFragment();
     SecondFragment melvinFragment = new SecondFragment();
@@ -24,11 +26,13 @@ public class PoteActivity6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //finding our bottom navigation view
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         getSupportFragmentManager().beginTransaction().replace(R.id.flFragment,homeFragment).commit();
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
+            //our switch cases, enabling the screens to change depending on option selected
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.home:

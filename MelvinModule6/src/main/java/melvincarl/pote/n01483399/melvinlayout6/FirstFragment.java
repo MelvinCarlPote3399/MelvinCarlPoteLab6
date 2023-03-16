@@ -18,13 +18,14 @@ import android.widget.Toast;
  * create an instance of this fragment.
  */
 
+//the code for our first fragment; should've been called HomeFragment
 
 public class FirstFragment extends Fragment {
-    ImageButton imageButton;
-    int counter = 0;
+    ImageButton imageButton; //image button declaration
+    int counter = 0; //counter declaration
     //Context context = getApplicationContext();
-    ProgressBar simpleProgressBar;
-    int progress = 0;
+    ProgressBar simpleProgressBar; //progress bar declaration
+    int progress = 0; //initial value for our progress
 
     public FirstFragment(){
         // require a empty public constructor
@@ -38,6 +39,7 @@ public class FirstFragment extends Fragment {
         imageButton = (ImageButton)view.findViewById(R.id.imageButton3);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
+            //each time that the image button is clicked, the counter will increase by 1
             public void onClick(View v) {
                 //setProgressValue(progress);
 
@@ -67,6 +69,7 @@ public class FirstFragment extends Fragment {
                     Toast.makeText(getContext(), getString(R.string.toast_text) + String.valueOf(counter),Toast.LENGTH_LONG).show();
                     simpleProgressBar.setVisibility(View.INVISIBLE);
                 }
+                //once we are a counter value of 5, the progress bar will become disappear temporarily
                 else if(counter == 5){
                     counter++;
                     Toast.makeText(getContext(), getString(R.string.toast_text) + String.valueOf(counter),Toast.LENGTH_LONG).show();
@@ -79,6 +82,7 @@ public class FirstFragment extends Fragment {
                     counter++;
                     Toast.makeText(getContext(), getString(R.string.toast_text) + String.valueOf(counter),Toast.LENGTH_LONG).show();
                 }
+                //once our counter is equal to 8, the next click will exit the app
                 else if (counter == 8){
                     System.exit(0);
                 }

@@ -20,9 +20,12 @@ import java.io.*;
  * create an instance of this fragment.
  */
 
+//the code for our second screen; should've been called MelvinFragment
 
 public class SecondFragment extends Fragment {
 
+    //declaring our radiogroup and radio buttons;
+    //enabling a radiogroup will allow for only one button at a time to be pressed
     RadioGroup radioGroup;
     RadioButton button1;
     RadioButton button2;
@@ -41,10 +44,11 @@ public class SecondFragment extends Fragment {
         button2 = (RadioButton)view.findViewById(R.id.Button2);
         button3 = (RadioButton)view.findViewById(R.id.Button3);
 
+        //here, we set our event listeners for our 3 radio buttons
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                    //making the Alertdialog for a button is pressed
                     AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                     builder.setCancelable(false);
                     builder.setTitle(R.string.alert_title);
@@ -56,8 +60,8 @@ public class SecondFragment extends Fragment {
                             dialogInterface.dismiss();
                         }
                     });
-                    AlertDialog alert = builder.create();
-                    alert.show();
+                    AlertDialog alert = builder.create(); //create the alert
+                    alert.show(); //alert is able to be shown
                 }
 
         });

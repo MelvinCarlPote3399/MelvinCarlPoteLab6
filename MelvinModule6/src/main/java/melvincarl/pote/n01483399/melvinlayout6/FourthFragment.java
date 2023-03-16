@@ -19,6 +19,9 @@ import android.widget.TextView;
 
 import java.io.*;
 
+
+//the code for the fourth fragment; should've been called SettingsFragment
+
 public class FourthFragment extends Fragment {
 
     public FourthFragment(){
@@ -28,12 +31,16 @@ public class FourthFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fourth, container, false);
+
+        //creating our TextViews, for where the values, passed from the third fragment, will be stored into
         TextView provincesView = view.findViewById(R.id.fourthFragment);
         TextView orderItem = view.findViewById(R.id.secondTextView);
 
+        //allows for the fragment to 'accept' the passed values
         getParentFragmentManager().setFragmentResultListener("requestResult", this, new FragmentResultListener() {
             @Override
             public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                //values passed in will be stored into the TextViews on this fragment
                 provincesView.setText(result.getString("selectPro"));
                 int index = result.getInt("selectIndex");
                 orderItem.setText(String.valueOf(index));
