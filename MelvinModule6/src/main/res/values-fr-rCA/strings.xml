@@ -8,4 +8,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="click_the_button_for_a_surprise">Click the button for a surprise:</string>
     <string name="toast_text">Melvin</string>
+    <string name="full_name">Melvin Carl Pote</string>
+    <string name="alert_title">Melvin Carl Pote</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="Button3">Button 3</string>
+    <string name="alert_button1">Button 1</string>
+    <string name="alert_button2">Button 2</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_button3">Button 3</string>
+    <string name="alert_ok_button">OK</string>
 </resources>
